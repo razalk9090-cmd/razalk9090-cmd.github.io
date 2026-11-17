@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>Razal K — Social Media &amp; Brand Building</title>
+  <meta name="description" content="Razal K handles marketing and sales for brands and uses AI automation to help them grow. BBA student at IIM Bangalore, based in Kerala." />
+  <meta name="author" content="Razal K" />
+  <meta name="theme-color" content="#EBEBD8" />
+  <!-- EDIT: after deploying, set your live URL here and in og:url / og:image (must be absolute URLs) -->
+  <!-- <link rel="canonical" href="https://your-site.netlify.app/" /> -->
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Razal K — Social Media &amp; Brand Building" />
+  <meta property="og:description" content="Marketing &amp; sales, AI automation and entrepreneurship. Co-founder of Step Clothing, BBA student at IIM Bangalore, based in Kerala." />
+  <meta property="og:image" content="assets/profile.jpg" />
+  <!-- <meta property="og:url" content="https://your-site.netlify.app/" /> -->
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Reusable SVG symbols (icons + logo badge) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-badge" viewBox="0 0 48 48">
+        <circle cx="24" cy="24" r="24" fill="#455230"/>
+        <g fill="none" stroke="#EBEBD8" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12.5 33V15h6.25a5 5 0 0 1 0 10H12.5"/><path d="M18.5 25 23 33"/>
+          <path d="M27.5 15v18"/><path d="M36 15l-8.5 9 8.5 9"/>
+        </g>
+        <circle cx="36.5" cy="11.5" r="2.6" fill="#9BA685"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.1-7-11.5a7 7 0 0 1 14 0C19 14.9 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></g></symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9.5 12 5l10 4.5-10 4.5L2 9.5z"/><path d="M6 11.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5"/><path d="M22 9.5V15"/></g></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3.5l2.6 5.3 5.9.9-4.3 4.1 1 5.8L12 16.9l-5.2 2.7 1-5.8-4.3-4.1 5.9-.9L12 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5 4.5 13.5H12l-1 8 8.5-11H12l1-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.3" cy="6.7" r="1.2" fill="currentColor"/></symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/></g></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.3a12 12 0 0 0 6.6 6.6l1.3-2 4 1.4v2.6a2 2 0 0 1-2.2 2A17.5 17.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3V9.75zm6.5 0h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.6 4.77 6V21h-4v-5c0-1.2-.02-2.75-1.7-2.75-1.7 0-1.95 1.3-1.95 2.65V21h-4V9.75z"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5"/><path d="M4.5 19.5h15"/></g></symbol>
+      <symbol id="i-print" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 8V3.5h10V8"/><rect x="3.5" y="8" width="17" height="8.5" rx="2"/><path d="M7 14h10v6.5H7z"/></g></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="M4 12 20 4l-4.5 16-3.8-6.7L4 12zm7.7 1.3L20 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+      <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand brand--logo" href="#top" aria-label="Razal K — back to top">
+        <svg class="brand-badge" aria-hidden="true"><use href="#i-badge"/></svg>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span></span><span></span>
+      </button>
+
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
+        <a class="btn btn-primary btn-sm" href="#contact">Contact me</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="section hero" id="top" aria-labelledby="hero-title">
+      <div class="container bento hero-grid">
+
+        <div class="tile hero-main reveal">
+          <p class="hero-tagline">Marketing &amp; Sales <span>·</span> AI Automation <span>·</span> Entrepreneur</p>
+          <h1 class="hero-name" id="hero-title">Razal K<span class="accent-dot">.</span></h1>
+          <p class="hero-sub">BBA in Digital Business &amp; Entrepreneurship at IIM Bangalore</p>
+          <p class="hero-intro">I handle marketing and sales for brands, and I use AI automation to help them grow faster. Open to freelance projects and internships.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="#work">See my work <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            <a class="btn btn-ghost" href="mailto:razalk5050@gmail.com?subject=Let%27s%20collaborate">Email me</a>
+          </div>
+          <p class="hero-meta"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg> Based in Kerala, India</p>
+        </div>
+
+        <!-- PHOTO: assets/profile-cutout.webp — portrait with the background removed (transparent) -->
+        <figure class="hero-photo reveal">
+          <div class="cutout">
+            <img src="assets/profile-cutout.webp" alt="Portrait of Razal K" width="600" height="712" fetchpriority="high" />
+          </div>
+        </figure>
+
+        <div class="tile mini-tile reveal">
+          <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-cap"/></svg></span>
+          <div>
+            <p class="mini-label">Studying at</p>
+            <p class="mini-value">IIM Bangalore</p>
+          </div>
+        </div>
+
+        <div class="tile mini-tile reveal">
+          <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <div>
+            <p class="mini-label">Open to</p>
+            <p class="mini-value">Freelance work &amp; internships</p>
+          </div>
+        </div>
+
+        <div class="tile mini-tile reveal">
+          <span class="mini-icon"><svg class="icon" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+          <div>
+            <p class="mini-label">Currently building</p>
+            <!-- EDIT: what you're working on right now -->
+            <p class="mini-value">AI automations for brands</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">Work</span>
+          <h2 id="work-title">Where I've worked</h2>
+        </header>
+
+        <div class="bento exp-grid">
+          <article class="tile exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-num" aria-hidden="true">01</span>
+              <span class="exp-cat">2025 – present</span>
+            </div>
+            <h3>Step Clothing</h3>
+            <p class="exp-org">Co-founder, sales &amp; marketing <span class="sep">•</span> Kerala</p>
+            <p class="exp-desc">My own premium T-shirt brand.</p>
+            <ul class="exp-list">
+              <li>Choose products and designs.</li>
+              <li>Run reels, product photos and paid ads.</li>
+            </ul>
+            <ul class="pills" aria-label="Tools used">
+              <li>Canva</li><li>CapCut</li><li>Meta Ads</li>
+            </ul>
+            <div class="exp-links">
+              <a class="link-arrow" href="https://www.instagram.com/step_clothing7" target="_blank" rel="noopener">Instagram <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="tile exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-num" aria-hidden="true">02</span>
+              <span class="exp-cat">Freelance</span>
+            </div>
+            <h3>Al Asyad Perfume</h3>
+            <p class="exp-org">Social media manager <span class="sep">•</span> Kerala</p>
+            <p class="exp-desc">Grew the brand's sales on Instagram.</p>
+            <ul class="exp-list">
+              <li>Planned content and wrote captions.</li>
+              <li>Ran ads that brought in more enquiries.</li>
+            </ul>
+            <ul class="pills" aria-label="Skills used">
+              <li>Content strategy</li><li>Instagram ads</li>
+            </ul>
+            <div class="exp-links">
+              <a class="link-arrow" href="https://www.instagram.com/alasyaad__perfume" target="_blank" rel="noopener">Instagram <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://al-asyad.com" target="_blank" rel="noopener">Website <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+
+          <article class="tile exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-num" aria-hidden="true">03</span>
+              <span class="exp-cat">E-commerce</span>
+            </div>
+            <h3>Shopio</h3>
+            <p class="exp-org">Social media manager <span class="sep">•</span> Qatar</p>
+            <p class="exp-desc">Ran marketing for an online store.</p>
+            <ul class="exp-list">
+              <li>Planned campaigns and promotions.</li>
+              <li>Handled online sales and customers.</li>
+            </ul>
+            <ul class="pills" aria-label="Skills used">
+              <li>Campaigns</li><li>Online sales</li>
+            </ul>
+          </article>
+
+          <article class="tile exp-card reveal">
+            <div class="exp-top">
+              <span class="exp-num" aria-hidden="true">04</span>
+              <span class="exp-cat">Internship</span>
+            </div>
+            <h3>Beeps Digital Pvt Ltd</h3>
+            <p class="exp-org">AI automation intern</p>
+            <!-- EDIT: add details of what you do at Beeps -->
+            <p class="exp-desc">Using AI to automate business work.</p>
+            <ul class="exp-list">
+              <li>Build AI automations for daily tasks.</li>
+              <li>Help the team save time with AI tools.</li>
+            </ul>
+            <ul class="pills" aria-label="Skills used">
+              <li>AI automation</li><li>AI tools</li>
+            </ul>
+            <div class="exp-links">
+              <a class="link-arrow" href="https://beepsdigital.com/" target="_blank" rel="noopener">Website <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">Skills</span>
+          <h2 id="skills-title">Skills &amp; expertise</h2>
+        </header>
+
+        <!-- The scrolling strip below is built automatically from these pills. -->
+        <div class="bento skills-grid">
+          <div class="tile skill-group reveal">
+            <span class="skill-num">01</span>
+            <h3>AI automation</h3>
+            <p class="skill-desc">Replacing repetitive, manual tasks with AI workflows so teams can focus on growth.</p>
+            <ul class="pills"><li>Workflow automation</li><li>Task automation</li><li>AI tools</li></ul>
+          </div>
+          <div class="tile skill-group reveal">
+            <span class="skill-num">02</span>
+            <h3>Marketing</h3>
+            <p class="skill-desc">Building brand awareness and turning followers into customers.</p>
+            <ul class="pills"><li>Digital marketing</li><li>Social media marketing</li><li>Brand building</li><li>Campaigns</li></ul>
+          </div>
+          <div class="tile skill-group reveal">
+            <span class="skill-num">03</span>
+            <h3>Business &amp; operations</h3>
+            <p class="skill-desc">Running projects and growing businesses, from finding clients to daily operations.</p>
+            <ul class="pills"><li>Project management</li><li>Business development</li><li>Client acquisition</li><li>E-commerce operations</li></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="marquee reveal" aria-hidden="true">
+        <div class="marquee-track" data-marquee></div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education" aria-labelledby="edu-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">Education</span>
+          <h2 id="edu-title">Education</h2>
+        </header>
+
+        <div class="bento edu-grid">
+          <article class="tile edu-card reveal">
+            <span class="chip chip--live">Pursuing</span>
+            <h3>BBA in Digital Business and Entrepreneurship</h3>
+            <p class="edu-inst">Indian Institute of Management Bangalore</p>
+            <p class="edu-grade"><span>Year</span>First year</p>
+          </article>
+
+          <article class="tile edu-card reveal">
+            <span class="chip">Completed</span>
+            <h3>Agentic AI &amp; Automation</h3>
+            <p class="edu-inst">Beeps AI and Automation Academy</p>
+            <p class="edu-grade"><span>Type</span>Course</p>
+          </article>
+
+          <article class="tile edu-card reveal">
+            <span class="chip">Completed</span>
+            <h3>Higher Secondary (Class 12)</h3>
+            <p class="edu-inst">IGHSS</p>
+            <p class="edu-grade"><span>Score</span>86.68%</p>
+          </article>
+
+          <article class="tile edu-card reveal">
+            <span class="chip">Completed</span>
+            <h3>Class 10</h3>
+            <p class="edu-inst">KHSS</p>
+            <p class="edu-grade"><span>Score</span>100%</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section class="section" id="resume" aria-labelledby="resume-title">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tag">Resume</span>
+          <h2 id="resume-title">Curriculum vitae</h2>
+        </header>
+
+        <div class="resume-layout">
+          <article class="cv-paper reveal" aria-label="Resume of Razal K">
+            <header class="cv-head">
+              <h3 class="cv-name">Razal K</h3>
+              <p class="cv-summary">BBA student at IIM Bangalore who handles marketing and sales for brands and uses AI automation to help them grow.</p>
+              <p class="cv-contact">
+                <span>razalk5050@gmail.com</span>
+                <span>linkedin.com/in/razalk</span>
+                <span>Kerala, India</span>
+              </p>
+            </header>
+
+            <section class="cv-block">
+              <h4>Experience</h4>
+              <div class="cv-item">
+                <div class="cv-row"><div><strong>AI automation intern</strong>, Beeps Digital Pvt Ltd</div><span>Internship</span></div>
+                <ul>
+                  <li>Build AI automations for daily business tasks.</li>
+                </ul>
+              </div>
+              <div class="cv-item">
+                <div class="cv-row"><div><strong>Freelance social media manager</strong>, Al Asyad Perfume, Kerala</div><span>Freelance</span></div>
+                <ul>
+                  <li>Planned the content strategy, wrote captions, posted content and ran ads.</li>
+                  <li>Brought in more online enquiries and sales, including a campaign that performed well.</li>
+                </ul>
+              </div>
+              <div class="cv-item">
+                <div class="cv-row"><div><strong>Social media manager</strong>, Shopio, Qatar</div><span>E-commerce</span></div>
+                <ul>
+                  <li>Ran social media and marketing for an online store: campaigns, product promotions and online sales.</li>
+                  <li>Handled customer chats and tracked performance to improve results.</li>
+                </ul>
+              </div>
+              <div class="cv-item">
+                <div class="cv-row"><div><strong>Co-founder, sales and marketing</strong>, Step Clothing, Kerala</div><span>2025 – present</span></div>
+                <ul>
+                  <li>Started a premium T-shirt brand with my brother and a friend; choose the products and designs we sell.</li>
+                  <li>Market the brand with reels, product photos and paid ads, using Canva, CapCut and Meta Business Suite.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="cv-block">
+              <h4>Education</h4>
+              <div class="cv-row"><div><strong>BBA in Digital Business and Entrepreneurship</strong>, Indian Institute of Management Bangalore</div><span>In progress</span></div>
+              <div class="cv-row"><div><strong>Agentic AI &amp; Automation</strong> (course), Beeps AI and Automation Academy</div><span>Completed</span></div>
+              <div class="cv-row"><div><strong>Higher Secondary (Class 12)</strong>, IGHSS</div><span>86.68%</span></div>
+              <div class="cv-row"><div><strong>Class 10</strong>, KHSS</div><span>100%</span></div>
+            </section>
+
+            <section class="cv-block">
+              <h4>Skills</h4>
+              <div class="cv-skill">
+                <strong>AI automation</strong>
+                <ul class="cv-tags"><li>Workflow automation</li><li>Task automation</li><li>AI tools</li></ul>
+              </div>
+              <div class="cv-skill">
+                <strong>Marketing</strong>
+                <ul class="cv-tags"><li>Digital marketing</li><li>Social media marketing</li><li>Brand building</li><li>Campaigns</li></ul>
+              </div>
+              <div class="cv-skill">
+                <strong>Business &amp; operations</strong>
+                <ul class="cv-tags"><li>Project management</li><li>Business development</li><li>Client acquisition</li><li>E-commerce operations</li></ul>
+              </div>
+              <div class="cv-skill">
+                <strong>Tools</strong>
+                <ul class="cv-tags"><li>Canva</li><li>CapCut</li><li>Meta Business Suite</li></ul>
+              </div>
+            </section>
+          </article>
+
+          <aside class="resume-actions reveal" aria-label="Resume actions">
+            <div class="tile resume-card">
+              <p class="resume-card-title">Take it with you</p>
+              <p class="muted">Opens your browser's print window. Choose “Save as PDF” to download a copy. Only the CV sheet is included.</p>
+              <button class="btn btn-primary btn-block" type="button" data-print>
+                <svg class="icon" aria-hidden="true"><use href="#i-download"/></svg> Save as PDF
+              </button>
+              <button class="btn btn-ghost btn-block" type="button" data-print>
+                <svg class="icon" aria-hidden="true"><use href="#i-print"/></svg> Print
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT (chat window) ============ -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head section-head--light reveal">
+          <span class="tag tag--light">Contact</span>
+          <h2 id="contact-title">Have a brand that needs to grow online?</h2>
+          <p class="section-intro">Reach me by email, or connect with me on LinkedIn or Instagram.</p>
+        </header>
+
+        <div class="contact-grid">
+          <a class="info-tile reveal" href="mailto:razalk5050@gmail.com">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span>
+            <span><span class="info-label">Email</span><span class="info-value">razalk5050@gmail.com</span></span>
+          </a>
+          <a class="info-tile reveal" href="https://www.linkedin.com/in/razalk" target="_blank" rel="noopener">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-linkedin"/></svg></span>
+            <span><span class="info-label">LinkedIn</span><span class="info-value">linkedin.com/in/razalk</span></span>
+          </a>
+          <a class="info-tile reveal" href="https://www.instagram.com/rzhllll____" target="_blank" rel="noopener">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></span>
+            <span><span class="info-label">Instagram</span><span class="info-value">@rzhllll____</span></span>
+          </a>
+          <div class="info-tile reveal">
+            <span class="info-icon"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg></span>
+            <span><span class="info-label">Based in</span><span class="info-value">Kerala, India</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#top" aria-label="Razal K — back to top">
+        <svg class="brand-badge" aria-hidden="true"><use href="#i-badge"/></svg>
+        <span class="brand-word">Razal K<span class="brand-dot" aria-hidden="true"></span></span>
+      </a>
+      <p class="muted">© <span data-year>2026</span> Razal K</p>
+      <a class="to-top" href="#top">Back to top <svg class="icon" aria-hidden="true"><use href="#i-up"/></svg></a>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
