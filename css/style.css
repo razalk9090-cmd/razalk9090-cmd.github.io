@@ -471,15 +471,8 @@ button, input, textarea { font: inherit; color: inherit; }
 .cv-row span { color: var(--paper-muted); white-space: nowrap; font-size: .88rem; }
 .cv-item { margin-bottom: 6px; }
 .cv-item ul { list-style: disc; padding-left: 1.2em; color: #3A3F4B; }
-.cv-skill { display: grid; grid-template-columns: 170px 1fr; gap: 4px 16px; align-items: start; margin-bottom: 6px; }
-.cv-skill strong { padding-top: 3px; }
-.cv-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-.cv-tags li {
-  padding: .15em .65em; border-radius: 5px;
-  background: #EEF0E2; border: 1px solid var(--paper-line);
-  color: var(--paper-accent); font-size: .85rem; font-weight: 600;
-  -webkit-print-color-adjust: exact; print-color-adjust: exact;   /* keep the highlight when printed */
-}
+.cv-skill { display: grid; grid-template-columns: 170px 1fr; gap: 2px 16px; margin-bottom: 4px; }
+.cv-skill-list { color: #3A3F4B; }
 
 .resume-actions { position: sticky; top: calc(var(--nav-h) + 24px); }
 .resume-card { display: grid; gap: 12px; }
